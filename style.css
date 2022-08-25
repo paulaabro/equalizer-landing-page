@@ -6,11 +6,18 @@ body {
 
   background-image: url("./assets/bg-main-mobile.png");
   background-repeat: no-repeat;
-  background-position: 0 -208px;
+  background-position: 50px -250px;
+}
+
+.max-width {
+  max-width: 375px;
+  margin: 0 auto;
 }
 
 header {
-  margin: 40px 0 64px 24px;
+  height: 112px;
+  display: flex;
+  align-items: center;
 }
 
 header .logo {
@@ -25,11 +32,9 @@ h1 {
   font-weight: 700;
   font-size: 40px;
   line-height: 48px;
-  padding: 0 24px;
 }
 
-main > p {
-  padding: 0 24px;
+main p {
   margin: 20px 0 166px;
 }
 
@@ -50,7 +55,7 @@ main > p {
   height: 430px;
   position: absolute;
   top: -98px;
-  left: calc(50vw - 105px);
+  left: calc(50% - 105px);
 }
 
 .premium {
@@ -80,6 +85,7 @@ h2 {
 .premium > p {
   font-size: 18px;
   line-height: 28px;
+  margin: 12px 0 36px;
 }
 
 .price {
@@ -118,6 +124,7 @@ button {
 
 .apple-btn {
   background-color: #191826;
+  margin: 32px 0 16px;
 }
 
 .android-btn {
@@ -133,7 +140,6 @@ button {
 a {
   font-weight: 700;
 }
-
 .social {
   width: 100px;
   display: flex;
