@@ -161,7 +161,7 @@ a {
 
     background-image: url("./assets/bg-main-tablet.png");
     background-size: 983px 808px;
-    background-position: -254px -172px;
+    background-position: -254px -112px;
   }
 
   .max-width {
@@ -169,16 +169,21 @@ a {
   }
 
   header {
-    height: 154px;
+    height: 156px;
+    position: relative;
   }
 
   header .logo {
     margin-bottom: 34px;
   }
 
-  /* TODO: redo this block */
   header .bg-pattern {
-    display: none;
+    height: 400px;
+    display: initial;
+
+    position: absolute;
+    top: -32px;
+    right: -70px;
   }
 
   main {
@@ -249,5 +254,121 @@ a {
 
   .social {
     margin-top: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    font-size: 20px;
+    line-height: 34px;
+
+    background-image: url("./assets/bg-main-desktop.png");
+    background-size: 1613px 1758px;
+    background-position: -150px -150px;
+  }
+
+  .max-width {
+    max-width: 1110px;
+  }
+
+  header .logo {
+    margin-bottom: 65px;
+  }
+
+  header .bg-pattern {
+    left: 1005px;
+  }
+
+  main {
+    width: 1110px;
+  }
+
+  .heading {
+    width: 1015px;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 88px;
+    line-height: 88px;
+  }
+
+  .heading p {
+    width: 825px;
+    margin: 40px 0 321px;
+  }
+
+  .background-card .bg-pattern {
+    width: 312px;
+    top: -40px;
+    left: 336px;
+  }
+
+  .phone {
+    height: 642px;
+    top: -213px;
+    left: 102px;
+  }
+
+  .premium {
+    width: 446px;
+    height: 625px;
+
+    position: absolute;
+    top: 90px;
+    left: 569px;
+
+    padding: 60px;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .premium > p {
+    font-size: 20px;
+    line-height: 34px;
+  }
+
+  button {
+    transition: all 500ms;
+    cursor: pointer;
+  }
+
+  .apple-btn:hover {
+    background-color: #66e2dc;
+  }
+
+  .android-btn:hover {
+    background-color: #ffb964;
+  }
+
+  .disclamer {
+    height: 79px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+    margin: 202px 0 91px;
+  }
+
+  .disclamer > div {
+    margin-top: 0;
+    gap: 359px;
+  }
+
+  .disclamer p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .social img {
+    transition: all 500ms;
+    cursor: pointer;
+  }
+
+  .social img:hover {
+    filter: invert(55%) sepia(62%) saturate(1642%) hue-rotate(327deg) brightness(103%) contrast(96%);
   }
 }
